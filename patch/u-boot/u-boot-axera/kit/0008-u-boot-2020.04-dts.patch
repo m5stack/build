@@ -1,0 +1,15 @@
+--- a/arch/arm/dts/AX620E_emmc.dts	2025-10-15 10:51:00.293577943 +0800
++++ b/arch/arm/dts/AX620E_emmc.dts	2025-10-15 10:51:19.681961297 +0800
+@@ -71,3 +71,11 @@
+ 		status = "okay";
+ 	};
+ };
++
++&i2c1 {
++	status = "okay";
++};
++
++&i2c4 {
++	status = "disabled";
++};
+\ 文件尾没有换行符

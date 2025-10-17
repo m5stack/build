@@ -1,0 +1,11 @@
+--- a/Makefile	2025-10-13 17:48:14.640360509 +0800
++++ b/Makefile	2025-10-13 17:50:36.295117246 +0800
+@@ -1155,7 +1155,7 @@
+ 	$(Q)rm -f $(old_version_h)
+ 
+ include/generated/utsrelease.h: include/config/kernel.release FORCE
+-	$(call filechk,utsrelease.h)
++	echo '#define UTS_RELEASE "4.19.125"' > include/generated/utsrelease.h
+ 
+ PHONY += headerdep
+ headerdep:
